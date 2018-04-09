@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>AutoPer</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    
+    <script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="js/echarts.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/macarons.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+
+    <!-- 流程图 -->
+    <script type="text/javascript" src="js/go.js"></script>
+    <script type="text/javascript" src="js/flowdesign.js"></script>
+    
+</head>
+
+<body>
+
+    <!-- header -->
+    <div class="ap-header">
+        <div class="ap-logo">
+            <img src="images/autoper.png">
+        </div>
+        <h2>AutoPer</h2>
+    </div>
+
+    <!-- aside -->
+    <div class="ap-aside">
+        <div class="ap-sideup">
+            <div id="container">
+                <h3>时间段:</h3>
+                <select class="form-control" name="select1" id="sel1">
+                    <option value="default" id="selection1" selected="selected">----请选择-----</option>
+                </select>
+            </div>
+        </div>
+        <div class="ap-sidedown">
+            <div id="ssInfor">
+                <h3>统计信息</h3>
+                <ul></ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- content -->
+    <div class="ap-content">
+        <h3 id="content-title">111</h3>
+        <!-- 总计信息展示图表 -->
+        <div id="ap-message">
+            <img id="autoperLoading" src="images/autoperloading.png" style="position: fixed; width: 200px; top:45%; left: 50%;">
+            <select class="form-control" style="float: left; width: 150px; margin-left: 240px; margin-top: 130px;" id="select">
+                <option value="提交次数">提交次数</option>
+                <option value="时间维度">时间维度</option>
+            </select>
+            <div id="main" style="height:500px; width: 80%; position: absolute; right: 20px; bottom: 50px;"></div>
+            <div id=" my_date_set2 "></div>
+        </div>
+
+        <!-- 流程图 -->
+        <div id="ap-job">
+            <div style="position: absolute; top: 120px; left: 320px;">
+                <div id="sample">
+                    <div style="width:100%; white-space:nowrap;">
+                        <!-- 工具栏 -->
+                        <!-- <span style="display: inline-block; vertical-align: top; width:100px">
+                            <div id="myPaletteDiv" style="border: solid 1px black; height: 560px"></div>
+                        </span> -->
+
+                        <!-- 流程展示图 -->
+                        <span style="display: inline-block; vertical-align: top; width:1000px">
+                          <div id="myDiagramDiv" style="border: solid 1px #cccccc; height: 560px"></div>
+                        </span>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
